@@ -1,4 +1,5 @@
-import Fire from "./fire.js";
+//import Fire from "./fire.js";
+import Snow from "./snow.js";
 
 let particles = [];
 
@@ -21,9 +22,19 @@ function draw() {
 }
 window.draw = draw;
 
+/*
 function mouseClicked() {
   for (let i = 0; i < 100; i++) {
     let particle = new Fire(mouseX, mouseY);
+    particles.push(particle);
+  }
+}
+window.mouseClicked = mouseClicked;
+*/
+
+function mouseClicked() {
+  for (let i = 0; i < 100; i++) {
+    let particle = new Snow(mouseX, mouseY);
     particles.push(particle);
   }
 }
