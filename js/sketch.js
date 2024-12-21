@@ -1,3 +1,5 @@
+// Code written in collaboration with Thomas Halvarsson 21-12/2024
+
 //import Fire from "./fire.js";
 import Snow from "./snow.js";
 import Bubble from "./bubble.js";
