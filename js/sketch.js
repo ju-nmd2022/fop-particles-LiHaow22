@@ -1,5 +1,6 @@
 //import Fire from "./fire.js";
 import Snow from "./snow.js";
+import Bubble from "./bubble.js";
 
 let particles = [];
 
@@ -21,7 +22,6 @@ function draw() {
   }
 }
 window.draw = draw;
-
 /*
 function mouseClicked() {
   for (let i = 0; i < 100; i++) {
@@ -29,8 +29,7 @@ function mouseClicked() {
     particles.push(particle);
   }
 }
-window.mouseClicked = mouseClicked;
-*/
+window.mouseClicked = mouseClicked;*/
 
 function mouseClicked() {
   for (let i = 0; i < 100; i++) {
@@ -39,3 +38,12 @@ function mouseClicked() {
   }
 }
 window.mouseClicked = mouseClicked;
+
+function keyPressed() {
+  // Check if the space bar is pressed
+  if (keyIsDown(32)) {
+    particles.push(new Bubble(width / 2, height / 2));
+    //console.log("works");
+  }
+}
+window.keyPressed = keyPressed;

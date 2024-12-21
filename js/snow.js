@@ -17,7 +17,7 @@ export default class Snow extends Particle {
     this.life++;
     this.opacity = 255 * (1 - this.life / this.maxLife); // Fade out
     this.velocity = 0.8 + Math.random();
-    console.log(this.x);
+    //console.log(this.x);
   }
 
   draw() {
